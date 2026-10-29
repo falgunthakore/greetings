@@ -103,7 +103,7 @@
         opacity: 0;
         background: linear-gradient(90deg, transparent, #fff, transparent);
         transform: rotate(-24deg);
-        animation: shoot 1.2s 1.3s ease-out forwards;
+        animation: shoot 3.2s 3.3s ease-out forwards;
       }
       .greeting {
         position: absolute;
@@ -113,7 +113,7 @@
         width: 94%;
         transform: translateX(-50%);
         text-align: center;
-        animation: hello 0.8s ease-out both;
+        animation: hello 0.8s ease-out 5s both;
       }
       .greeting h1 {
         margin: 0;
@@ -171,7 +171,7 @@
         opacity: 0;
         transform-box: fill-box;
         transform-origin: center;
-        animation: arrive 0.85s cubic-bezier(0.16, 0.8, 0.25, 1)
+        animation: arrive 1.3s cubic-bezier(0.16, 0.8, 0.25, 1)
           var(--delay, 0s) forwards;
       }
       .stemline {
@@ -200,16 +200,16 @@
       .paper-back {
         opacity: 0;
         transform-origin: 350px 470px;
-        animation: paperIn 0.8s 3.5s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        animation: paperIn 0.8s 3.2s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
       }
       .paper-front {
         opacity: 0;
         transform-origin: 350px 475px;
-        animation: paperIn 0.8s 3.85s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+        animation: paperIn 0.8s 3.55s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
       }
       .paper-fold {
         opacity: 0;
-        animation: foldIn 0.65s 4.15s ease-out forwards;
+        animation: foldIn 0.65s 3.85s ease-out forwards;
       }
       .ribbon {
         opacity: 0;
@@ -618,9 +618,9 @@
             </g>
           </defs>
           <!-- stems arrive first, followed by each flower head -->
-          <g
+                    <g
             class="flower-arrive"
-            style="--delay: 0.1s; --x: -150px; --y: 25px"
+            style="--delay: 0.6s; --x: -150px; --y: 25px"
           >
             <path class="stemline" d="M347 485 Q285 390 185 270" />
             <path
@@ -634,7 +634,7 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.45s; --x: 150px; --y: 25px"
+            style="--delay: 0.95s; --x: 150px; --y: 25px"
           >
             <path class="stemline" d="M352 486 Q419 385 516 274" />
             <path
@@ -648,7 +648,7 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.65s; --x: -100px; --y: 55px"
+            style="--delay: 1.15s; --x: -100px; --y: 55px"
           >
             <path class="stemline" d="M344 485 Q300 378 291 221" />
             <path
@@ -658,7 +658,7 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.85s; --x: 100px; --y: 55px"
+            style="--delay: 1.25s; --x: 100px; --y: 55px"
           >
             <path class="stemline" d="M356 485 Q398 375 411 215" />
             <path
@@ -666,7 +666,7 @@
               d="M384 390 Q420 360 426 389 Q409 409 384 390Z"
             />
           </g>
-          <g class="flower-arrive" style="--delay: 1.05s; --x: 0px; --y: 70px">
+          <g class="flower-arrive" style="--delay: 1.55s; --x: 0px; --y: 70px">
             <path class="stemline" d="M350 492 Q349 370 350 175" />
             <path
               class="leaf"
@@ -679,7 +679,7 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.15s; --x: -190px; --y: -20px"
+            style="--delay: 0.65s; --x: -190px; --y: -20px"
           >
             <g transform="translate(185 263) scale(1.03)">
               <use href="#daisyHead" />
@@ -687,7 +687,7 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.4s; --x: 190px; --y: -20px"
+            style="--delay: 0.9s; --x: 190px; --y: -20px"
           >
             <g transform="translate(516 267) scale(1.05)">
               <use href="#peachRose" />
@@ -695,7 +695,7 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.65s; --x: -120px; --y: -40px"
+            style="--delay: 1.15s; --x: -120px; --y: -40px"
           >
             <g transform="translate(290 214) scale(1.08)">
               <use href="#tulip" />
@@ -703,18 +703,18 @@
           </g>
           <g
             class="flower-arrive"
-            style="--delay: 0.85s; --x: 120px; --y: -40px"
+            style="--delay: 1.25s; --x: 120px; --y: -40px"
           >
             <g transform="translate(412 209) scale(1.02)">
               <use href="#daisyHead" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.05s; --x: 0px; --y: -70px">
+          <g class="flower-arrive" style="--delay: 1.55s; --x: 0px; --y: -70px">
             <g transform="translate(350 169) scale(1.23)">
               <use href="#roseHead" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.2s; --x: -65px; --y: 0px">
+          <g class="flower-arrive" style="--delay: 1.7s; --x: -65px; --y: 0px">
             <g transform="translate(240 320) scale(.78)">
               <use href="#lavenderSprig" />
             </g>
@@ -722,47 +722,47 @@
               <use href="#lavenderSprig" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.35s; --x: 50px; --y: 20px">
+          <g class="flower-arrive" style="--delay: 1.85s; --x: 50px; --y: 20px">
             <g transform="translate(338 278) scale(.72)">
               <use href="#peachRose" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.4s; --x: -80px; --y: 20px">
+          <g class="flower-arrive" style="--delay: 1.9s; --x: -80px; --y: 20px">
             <g transform="translate(235 300) rotate(-12) scale(.72)">
               <use href="#roseHead" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.45s; --x: 75px; --y: 15px">
+          <g class="flower-arrive" style="--delay: 1.95s; --x: 75px; --y: 15px">
             <g transform="translate(467 300) rotate(10) scale(.72)">
               <use href="#daisyHead" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.5s; --x: -35px; --y: 15px">
+          <g class="flower-arrive" style="--delay: 2s; --x: -35px; --y: 15px">
             <g transform="translate(275 265) rotate(-8) scale(.76)">
               <use href="#peachRose" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.55s; --x: 35px; --y: 15px">
+          <g class="flower-arrive" style="--delay: 2.05s; --x: 35px; --y: 15px">
             <g transform="translate(430 260) rotate(8) scale(.78)">
               <use href="#tulip" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.6s; --x: -45px; --y: 10px">
+          <g class="flower-arrive" style="--delay: 2.1s; --x: -45px; --y: 10px">
             <g transform="translate(305 315) rotate(-10) scale(.62)">
               <use href="#daisyHead" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.65s; --x: 45px; --y: 10px">
+          <g class="flower-arrive" style="--delay: 2.15s; --x: 45px; --y: 10px">
             <g transform="translate(395 315) rotate(10) scale(.64)">
               <use href="#roseHead" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.7s; --x: -25px; --y: 5px">
+          <g class="flower-arrive" style="--delay: 2.2s; --x: -25px; --y: 5px">
             <g transform="translate(258 345) rotate(-15) scale(.58)">
               <use href="#tulip" />
             </g>
           </g>
-          <g class="flower-arrive" style="--delay: 1.75s; --x: 25px; --y: 5px">
+          <g class="flower-arrive" style="--delay: 2.25s; --x: 25px; --y: 5px">
             <g transform="translate(445 342) rotate(12) scale(.6)">
               <use href="#peachRose" />
             </g>
@@ -903,8 +903,7 @@
           </g>
         </svg>
       </div>
-      //
-      <div class="final-caption">Made with a little extra love ♡</div>
+     <!-- <div class="final-caption">Made with a little extra love ♡</div>  -->
     </main>
     <script>
       (() => {
